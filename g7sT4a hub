@@ -133,6 +133,15 @@ Tab:AddButton({
               loadstring(game:HttpGet('https://pastebin.com/raw/0MLPL32f'))()
       end    
 })
+Tab:AddButton({
+    Name = "Unlock all emotes",
+    Callback = function()
+              loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+      end    
+})
+
+
+
 
 local Tab = Window:MakeTab({
     Name = "Fun",
@@ -185,6 +194,26 @@ Tab:AddButton({
     Name = "Fling",
     Callback = function()
               loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Pizza Place",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Fe? Audio",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/pizza-place-audio-player/main/script"))()
+      end    
+})
+
+Tab:AddButton({
+    Name = "Work automatically",
+    Callback = function()
+         loadstring(game:HttpGet("https://pastebin.com/raw/xQTtE6D9"))()
       end    
 })
 
