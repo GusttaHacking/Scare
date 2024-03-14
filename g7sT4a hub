@@ -45,6 +45,13 @@ Tab:AddButton({
       end    
 })
 Tab:AddButton({
+    Name = "Prison life admin 3 (Mobile / Pc)!",
+    Callback = function()
+              loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))();
+      end    
+})
+
+Tab:AddButton({
     Name = "Lag Server",
     Callback = function()
               while wait() do
