@@ -203,7 +203,24 @@ Tab:AddButton({
               loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
       end    
 })
-
+Tab:AddButton({
+	Name = "Fling 2",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Fling 3",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2",true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Fling 4",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastefy.app/w7KnPY70/raw'),true))()
+  	end    
+})
 local Tab = Window:MakeTab({
     Name = "Pizza Place",
     Icon = "rbxassetid://4483345998",
@@ -223,7 +240,23 @@ Tab:AddButton({
          loadstring(game:HttpGet("https://pastebin.com/raw/xQTtE6D9"))()
       end    
 })
-
+local Tab = Window:MakeTab({
+	Name = "client/visual",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "RoXploit",
+	Callback = function()
+      		loadstring(game:GetObjects('rbxassetid://364364477')[1].Source)()
+  	end    
+})
+Tab:AddButton({
+	Name = "c00lgui",
+	Callback = function()
+      		loadstring(game:GetObjects("rbxassetid://11801763945")[1].Source)()
+  	end    
+})
 local Tab = Window:MakeTab({
     Name = "Info",
     Icon = "rbxassetid://4483345998",
