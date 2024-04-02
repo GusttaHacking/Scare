@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "G7ST4A UNIVERSAL HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "G7ST4A UNIVERSAL HUB (HAPPY EASTER)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
     Name = "Admin Commands",
     Icon = "rbxassetid://4483345998",
@@ -9,7 +9,7 @@ local Section = Tab:AddSection({
     Name = "Admin Commands Tab"
 })
 OrionLib:MakeNotification({
-    Name = "Welcome to G7ST4A HUB (Happy Easter!)",
+    Name = "Welcome to G7ST4A HUB",
     Content = "👾",
     Image = "rbxassetid://4483345998",
     Time = 5
